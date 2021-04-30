@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header class="header">
+     <div class="container header-container">   
+            
+        <nav class="navigation">
+            <a href="./index.html" class="link logo-header">
+            <img class="logo" src="./images/logo.png" alt="Логотип отеля" width="70" height="65">
+            <!--  <svg  aria-label="Логотип отеля">
+                <use class="logo" href="./images/logo.png"></use>                            
+            </svg> -->
+            </a>
+              <ul class="list site-nav">
+               <li class="menu-item"><a href="./index.html" class="link menu-link"></a>Home</li>
+               <li class="menu-item">The hut</li>
+               <li class="menu-item">The area</li>
+               <li class="menu-item">Booking</li>
+               <li class="menu-item">About us</li>
+               <li class="menu-item">FAQ</li>
+              </ul>
+
+              <button type="button" 
+               class="button" 
+               aria-expanded="false"
+               aria-controls="menu-container"
+               data-menu-button > Book now
+          
+              </button> 
+        </nav> 
+     </div>
+
+    </header> 
+   
+<main>
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <h1 class="hero-title">Find peace in the Forest<span class="hero-text">Come and stay in out hut hotel near <br> Mariager Fjord in Denmark
+            </span></h1>
+    
+            <button type="button" class="button hero-button" data-modal-open>Book now</button>
+        </div>
+    </section>
+
+ <!-- Cabin section -->
+
+ <section class="section cabin-section">
+     <div class="container cabin-container">
+        <div> 
+            <div class="cabin-info">
+                <h2 class="main-title">The Cabins</h2>
+                <p class="cabin-text">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. 
+                    They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. 
+                    On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. 
+                    The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.</p>
+                <a href="">Read more</a></div>
+            
+            <img src="./images/the-bed.jpg" alt="The bed in cabin">
+        </div>
+    
+    
+         <ul class="list">
+             <li class="cabin-item"><img src="./images/1.png" alt="First pic"></a></li>
+             <li class="cabin-item"><img src="./images/2.png" alt="Second pic"></a></li>
+             <li class="cabin-item"><img src="./images/3.png" alt="Third pic"></a></li>
+         </ul>
+     </div>
+    
+ </section>
+
+</main>
+  
+</body>
+</html>

@@ -1,0 +1,285 @@
+:root {
+    --main-text-color: #000000;
+    --accent-color: rgb(33, 150, 243);
+    --title-color: #333333;
+    --white: #ffffff;
+    --dark-background: #2f303a;
+    --footer-contacts: rgba(255, 255, 255, 0.6);
+    --button: #f5f4fa;
+    --icon-color: #afb1b8;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    background-color: var(--white);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  
+  p {
+    margin-bottom: 50px;
+  }
+  
+  /*Скрытые заголовки*/
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  
+  /*Контейнер для секций НЕ ТРОГАТЬ БОЛЬШЕ*/
+  .container {
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /*Список без маркеров*/
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /*Ссылка*/
+  .link {
+    color: var(--title-color);
+    text-decoration: none;
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /*Header*/
+  .header {
+    align-items: center;
+    background-color: var(--white);
+    
+  }
+  
+  .header .logo-header {
+    margin-left: 96px;
+}
+
+.header-container {
+  border: 1px solid tomato;
+    
+  }
+
+  /* Навигация */
+.navigation {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+ 
+}
+
+/*Навигация сайта*/
+.site-nav {
+  display: inline-flex;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  margin-left: 100px;
+}
+
+.menu-item {
+  font-family: DIN;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+/*Применится ко всем, у которых есть сосед сверху*/
+.site-nav .menu-item + .menu-item {
+  margin-left: 36px;
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.314;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*Кнопка*/
+
+.button {
+  margin-left: 100px;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: #5B6460;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white);
+  background-color: #5B6460;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hero section */
+.hero-section {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/iceland-houses.jpg");
+  background-color: var(--dark-background);
+}
+
+.hero-container {
+  position: relative;
+  height: 700px;
+  padding-top: 95px;
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+position: absolute;
+
+height: 72px;
+left: -1.48%;
+right: 0%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 70px;
+line-height: 72px;
+/* identical to box height, or 103% */
+
+text-align: right;
+margin-right: 58px;
+color: var(--white);
+
+}
+
+.hero-text { 
+position: absolute;
+top: calc(50% - 84px/2 + 53px);
+height: 72px;
+left: -1.48%;
+right: 0%;
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+text-align: right;
+color: var(--white);
+
+margin-top: 34px;
+margin-right: 142px;
+}
+
+.hero-button {
+  padding: 36px 81px;
+  min-width: 263px;
+  height: 100px;
+
+  position: absolute;
+  bottom: -40px;
+}
+
+/* Cabins section  */
+.cabin-section {
+padding-top: 150px;
+}
+
+.main-title {
+  
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 40px;
+
+color: #5B6460;
+}
+
+.cabin-text {
+margin-top: 50px;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 30px;
+/* or 187% */
+
+color: #000000;
+}
+
+.cabin-info {
+  width: 465px;
+  height: 351px;
+  padding-left: ;
+}
