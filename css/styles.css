@@ -198,6 +198,7 @@
 }
 
 .hero-container {
+  border: 1px solid tomato;
   position: relative;
   height: 700px;
   padding-top: 95px;
@@ -256,34 +257,70 @@ margin-right: 142px;
 padding-top: 150px;
 }
 
+.cabin-container {
+  border: 1px solid tomato;
+}
+
+.cabin-wrapper {
+  display: flex;
+  margin-bottom: 150px;
+  height: 440px;
+}
+
+.cabin-info {
+  width: 700px;
+  padding: 80px 110px;
+
+}
+
+
+.read-more {
+  font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: left;
+color: #5B6460;
+}
+
+.cabin-gallery {
+  margin-bottom: 150px;
+}
+
+.cabin-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .main-title {
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 40px;
 line-height: 40px;
-
 color: #5B6460;
 }
 
 .main-text {
 margin-top: 50px;
+margin-bottom: 40px;
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
 line-height: 30px;
 /* or 187% */
-
 color: #000000;
 }
 
-.cabin-info {
-  width: 465px;
-  height: 351px;
-  padding-left: 30px;
-}
 
 /* Forest */
+.forest-container {
+  border: 1px solid tomato;
+}
+
 .map {
   display: flex;
  
@@ -303,6 +340,7 @@ color: #000000;
 
 .facilities-container {
   background-color: #5B6460;
+  border: 1px solid tomato;
 }
 
 .facilities {
