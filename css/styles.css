@@ -61,8 +61,8 @@
   /*Контейнер для секций НЕ ТРОГАТЬ БОЛЬШЕ*/
   .container {
     width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     margin-right: auto;
     margin-left: auto;
   }
@@ -257,7 +257,6 @@ padding-top: 150px;
 }
 
 .main-title {
-  
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
@@ -267,7 +266,7 @@ line-height: 40px;
 color: #5B6460;
 }
 
-.cabin-text {
+.main-text {
 margin-top: 50px;
 font-style: normal;
 font-weight: 300;
@@ -281,5 +280,74 @@ color: #000000;
 .cabin-info {
   width: 465px;
   height: 351px;
-  padding-left: ;
+  padding-left: 30px;
 }
+
+/* Forest */
+.map {
+  display: flex;
+ 
+}
+
+.forest-info {
+  width: 700px;
+  padding: 150px 110px;
+
+  background-color: #E9ECE0;
+}
+
+/* Facilities */
+.facilities-section { 
+  color: #ffffff;
+}
+
+.facilities-container {
+  background-color: #5B6460;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  padding-top: 120px;
+
+}
+
+.facilities .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-item {
+   margin-bottom: 80px;
+  margin-left: 120px;
+}
+
+.facilities-title {
+
+  padding-top: 150px;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+
+.facilities-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 170px;
+  height: 90px; */
+  
+}
+
+.facilities-logo:hover {
+  fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
